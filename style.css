@@ -1,0 +1,262 @@
+/* Estilização geral da página font-family: Arial, sans-serif;
+ : Define a família de fontes utilizada no corpo do documento como Arial ou qualquer outra fonte genérica do tipo sans-serif. background-color: #f5f5f5;
+ : Define a cor de fundo do corpo do documento como um tom de cinza claro. color: #333;
+ : Define a cor do texto do corpo do documento como um tom de cinza escuro. margin: 0;
+ : Remove todas as margens do elemento body, evitando espaços em branco inesperados. padding: 0;
+ : Remove todo o preenchimento interno (espaço entre a borda e o conteúdo) do elemento body. */
+ body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+/* Estilização do cabeçalho
+: background-color: #0072c6 define a cor de fundo do cabeçalho como azul escuro. 
+: color: #fff define a cor do texto dentro do cabeçalho como branco. display
+: flex define que o elemento é um contêiner flexível. 
+: justify-content: space-between alinha os itens dentro do contêiner flexível para que haja um espaçamento uniforme entre eles. 
+: align-items: center alinha verticalmente os itens dentro do contêiner flexível no centro. 
+: position: fixed define que o cabeçalho é fixo na posição e não se move quando a página é rolada. 
+: top: 0 define que o cabeçalho começa no topo da janela do navegador;
+: left: 0 define que o cabeçalho começa no lado esquerdo da janela do navegador;
+: right: 0 define que o cabeçalho termina no lado direito da janela do navegador;
+: z-index: 1 define a ordem em que os elementos são exibidos na tela. Nesse caso, o cabeçalho está acima de todos os outros elementos;
+: padding: 10px adiciona um espaçamento interno de 10 pixels em torno do cabeçalho. */
+header {
+    background-color: #0072c6;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    padding: 10px;
+}
+h1 {
+    margin: 0;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+/*margin: 0;
+: Define a margem do elemento como zero, ou seja, não há espaço entre o elemento e seus elementos vizinhos. padding: 0;
+: Define o preenchimento interno do elemento como zero, ou seja, não há espaço entre a borda do elemento e seu conteúdo. list-style: none;
+: Remove o estilo padrão de lista do elemento ul, que inclui marcadores de lista. Neste caso, a lista não terá marcadores. */
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+/* display: inline-block;
+: Define o tipo de exibição dos itens de lista como inline-block, fazendo com que cada item de lista seja exibido em uma linha horizontal, ao contrário do comportamento padrão dos elementos de lista que normalmente são exibidos em uma coluna vertical. margin-left: 20px;
+: Define a margem esquerda dos itens de lista como 20px, adicionando espaço entre cada item de lista. */
+nav li {
+    display: inline-block;
+    margin-left: 20px;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+/* Estilização da seção inicial com noticia destaque 
+: A propriedade background-color define a cor de fundo da seção de notícias. 
+: A propriedade color define a cor do texto dentro da seção. 
+: A propriedade height define a altura da seção, no caso, a altura máxima é definida em 50% da altura total da tela (50vh). 
+: A propriedade display define o tipo de exibição do elemento, nesse caso, como um contêiner flexível. 
+: A propriedade justify-content define o alinhamento horizontal do conteúdo dentro do contêiner, centralizando-o na horizontal. 
+: A propriedade align-items define o alinhamento vertical do conteúdo dentro do contêiner, centralizando-o na vertical. */
+.noticia-section {
+    background-color: #0077b6;
+    color: white;
+    height: 50vh;
+   /* define a altura máxima para 50% da tela */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+}
+.noticia-content {
+    max-width: 800px;
+   /* define a largura máxima do conteúdo para 800 pixels */
+    text-align: center;
+}
+.noticia-content h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+}
+.noticia-content p {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+}
+.noticia-content button {
+    background-color: white;
+    color: #0077b6;
+    border: none;
+    border-radius: 4px;
+    padding: 0.5em 1em;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+/* Estilização da seção de destaques */
+section#destaques {
+    background-color: #f5f5f5;
+    padding: 50px;
+}
+section#destaques h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-align: center;
+    text-transform: uppercase;
+}
+section#destaques .colunas {
+    display: flex;
+    justify-content: space-between;
+}
+section#destaques .coluna {
+    width: 30%;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+}
+section#destaques h3 {
+    margin-top: 0;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+section#destaques p {
+    margin-bottom: 10px;
+}
+section#destaques a {
+    display: inline-block;
+    background-color: #0072c6;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+/* Estilização do formulário de contato 
+background-color: #f8f8f8;: Define a cor de fundo da seção como um cinza claro.
+padding: 50px;: Define o preenchimento (espaço interno) da seção como 50 pixels em 
+   todas as direções.
+margin: 0 auto;: Define as margens da seção como 0 pixels acima e abaixo e como automáticas à esquerda e à direita.
+Isso centraliza a seção horizontalmente na página.
+margin-bottom: 30px;: Define uma margem inferior de 30 pixels para criar 
+   espaço entre a seção de formulário e a próxima seção.
+max-width: 800px;: Define a largura máxima da seção como 800 pixels. Isso impede 
+que a seção se estenda demais em telas maiores, mantendo-a com uma largura adequada.
+text-align: center;: Define o alinhamento do texto dentro da seção como centralizado.
+border-radius: 10px;: Define o raio da borda da seção como 10 pixels, criando uma borda 
+arredondada.
+box-shadow: 0px 0px 10px rgba(0,0,0,0.2);: Adiciona uma sombra ao redor da seção. 
+A sombra tem 10 pixels de deslocamento horizontal e vertical, nenhum desfoque e uma cor 
+preta com uma transparência de 20%.*/
+section#formulario-contato {
+    background-color: #f8f8f8;
+    padding: 50px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    max-width: 800px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+}
+section#formulario-contato h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+section#formulario-contato label {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+input, textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 500px;
+}
+textarea {
+    height: 150px;
+    resize: none;
+}
+/*
+background-color: #3e64af;: Define a cor de fundo do botão como um azul escuro.
+color: #fff;: Define a cor do texto do botão como branco.
+padding: 10px 30px;: Define o preenchimento (espaço interno) do botão como 10 pixels na 
+   parte superior e inferior e 30 pixels na parte esquerda e direita.
+border: none;: Remove a borda do botão.
+border-radius: 5px;: Define o raio da borda do botão como 5 pixels, criando uma borda 
+   arredondada.
+font-size: 1.2rem;: Define o tamanho da fonte do texto do botão como 1.2 vezes o tamanho 
+   da fonte padrão do navegador.
+cursor: pointer;: Define o cursor do mouse como uma mão, indicando que o botão é clicável.
+*/
+section#formulario-contato button[type="submit"] {
+    background-color: #3e64af;
+    color: #fff;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+section#formulario-contato button[type="submit"]:hover {
+    background-color: #2d4a7d;
+}
+/* Estilização do rodapé */
+footer {
+    background-color: #0e4066;
+    color: #fff;
+    padding: 50px;
+}
+/*
+display: flex;: Define o elemento como um container flexível.
+flex-wrap: wrap;: Define como o container flexível deve se
+comportar quando seus filhos não cabem dentro do espaço disponível.justify-content: space-between;: 
+Define como o espaço disponível deve ser distribuído entre os filhos do elemento.
+*/
+.colunas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.coluna {
+    flex: 1;
+    margin-right: 50px;
+}
+.coluna:last-child {
+    margin-right: 0;
+}
+h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+li {
+    margin-bottom: 10px;
+}
+a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+a:hover {
+    text-decoration: underline;
+}
